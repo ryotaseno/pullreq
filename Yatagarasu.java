@@ -20,5 +20,6 @@ public class Yatagarasu extends Monster implements Bird {
 			system.out.println(this.name + "の残りHPは" + monster.getHp() + "です。");
 		}
 	}
+	
 
 }
