@@ -6,7 +6,7 @@ public class Zombie extends Monster implements Human {
 
 	public Yatagarasu(String name) {
 		this.name = name;
-		Life life = new Life;
+		Life life = new Life();
 		life.setHp(9999);
 	}
 
