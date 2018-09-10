@@ -4,8 +4,8 @@ public abstract class Life {
 
 	private int hp;
 
-	public void dead() {
-		System.out.println("あなたは死にました。");
+	public void dead(String name) {
+		System.out.println("あなたのペット(" + name + ")が死亡");
 	}
 
 	public int getHp() {

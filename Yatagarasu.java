@@ -2,9 +2,11 @@ package takahara;
 
 public class Yatagarasu extends Monster implements Bird {
 
-	public Yatagarasu() {
-		Life life = new Life();
-		life.setHp(2000);
+	String name;
+
+	public Yatagarasu(String name) {
+		super.setName(name);
+		super.setHp(2000);
 	}
 
 	public void run(){
@@ -15,11 +17,11 @@ public class Yatagarasu extends Monster implements Bird {
 		System.out.println("八咫烏が噛みついています。");
 		monster.setHp(monster.getHp() - 1500);
 		if(monster.getHp() <= 0) {
-			life.dead();
+			super.dead(monster.getName());
 		}else {
-			system.out.println(this.name + "の残りHPは" + monster.getHp() + "です。");
+			System.out.println(monster.getName() + "の残りHPは" + monster.getHp() + "です。");
 		}
 	}
-	
+
 
 }
