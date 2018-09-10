@@ -7,7 +7,7 @@ public class Main {
 
 		Yatagarasu yatagarasuA = new Yatagarasu("八咫烏A");
 		Yatagarasu yatagarasuB = new Yatagarasu("八咫烏B");
-		Zombie zombieA = new Zombie();
+		Zombie zombieA = new Zombie("ぞんび");
 
 
 		zombieA.attack(yatagarasuB);
