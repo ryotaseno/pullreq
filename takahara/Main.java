@@ -9,7 +9,7 @@ public class Main {
 		Yatagarasu yatagarasuB = new Yatagarasu("八咫烏B");
 		Zombie zombieA = new Zombie("ゾンビA");
 
-
+		//aaaaaaa
 
 		zombieA.attack(yatagarasuB);
 		zombieA.attack(yatagarasuB);
