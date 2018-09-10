@@ -5,7 +5,7 @@ public class Yatagarasu extends Monster implements Bird {
 	String name;
 
 	public Yatagarasu(String name) {
-		this.name = name;
+		super.setName(name);
 		super.setHp(2000);
 	}
 
@@ -17,7 +17,7 @@ public class Yatagarasu extends Monster implements Bird {
 		System.out.println("八咫烏が噛みついています。");
 		monster.setHp(monster.getHp() - 1500);
 		if(monster.getHp() <= 0) {
-			super.dead();
+			super.dead(monster.getName());
 		}else {
 			System.out.println(this.name + "の残りHPは" + monster.getHp() + "です。");
 		}
