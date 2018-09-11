@@ -7,7 +7,7 @@ public class Sword extends Weapon{
 
 	public int attack(int hp) {
 		hp -= this.power ;
-		System.out.println("d—¢€–S");
+		System.out.println("slash");
 		return hp;
 	}
 
