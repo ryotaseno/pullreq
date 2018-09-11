@@ -1,6 +1,7 @@
 package takahara;
 
 public abstract class Monster extends Life {
+	abstract void attack(Monster monster);
 
 	private String name;
 
@@ -11,7 +12,5 @@ public abstract class Monster extends Life {
 	public void setName(String name) {
 		this.name = name;
 	}
-
-	abstract void attack(Monster monster);
 
 }
