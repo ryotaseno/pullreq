@@ -23,4 +23,10 @@ public class Zombie extends Monster implements Human {
 		}
 	}
 
+	@Override
+	void attack(Character character) {
+		// TODO 自動生成されたメソッド・スタブ
+
+	}
+
 }

@@ -23,5 +23,11 @@ public class Yatagarasu extends Monster implements Bird {
 		}
 	}
 
+	@Override
+	void attack(Character character) {
+		// TODO 自動生成されたメソッド・スタブ
+
+	}
+
 
 }

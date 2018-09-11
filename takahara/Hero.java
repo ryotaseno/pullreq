@@ -22,4 +22,10 @@ public class Hero extends Character implements Human{
 		super.setName(name);
 	}
 
+	@Override
+	void attack() {
+		// TODO 自動生成されたメソッド・スタブ
+
+	}
+
 }
