@@ -1,10 +1,4 @@
-<<<<<<< HEAD
-﻿package takahara;
 
-public interface Human {
-	void run();
-}
-=======
 package takahara;
 /* Name it "Hello.java" 
  * Compile it by running "javac Hello.java"
@@ -14,4 +8,3 @@ package takahara;
 interface Human {
 	void run();
 }
->>>>>>> seno
