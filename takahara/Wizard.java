@@ -14,9 +14,12 @@ public class Wizard extends Character implements Human{
 		}
 	}
 
-
 	public void run() {
 		System.out.println("魔法使いは走った");
+	}
+
+	public Wizard(String name) {
+		super.setName(name);
 	}
 
 }

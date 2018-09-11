@@ -18,4 +18,8 @@ public class Hero extends Character implements Human{
 		System.out.println("勇者は走っています");
 	}
 
+	public Hero(String name) {
+		super.setName(name);
+	}
+
 }
