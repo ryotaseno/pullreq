@@ -1,13 +1,9 @@
-
-
 package takahara;
 
-public class Wizard extends Character implements Human{
+public class SuperHero extends Hero{
 
-  	public Wizard(String name,int hp,int lv) {
+	public SuperHero(String name) {
 		super.setName(name);
-		super.setHp(hp);
-		super.setLv(lv);
 	}
 
 	public boolean attack(Monster monster) {
@@ -16,32 +12,22 @@ public class Wizard extends Character implements Human{
 		if( super.getWp() != null ){
 			//持っている武器のattack()を呼び出す
 			monster.setHp(super.getWp().attack(monster.getHp()));
+			System.out.println(super.getName() + "が一回目の武器攻撃しています");
+			monster.setHp(super.getWp().attack(monster.getHp()));
+			System.out.println(super.getName() + "が二回目の武器攻撃しています");
 			//生存判定
 			boolean deadFlag = super.checkDead(monster);
 			return deadFlag;
 		} else {
 			//素手で殴る場合の処理
-			System.out.println(super.getName() + "が素手で攻撃しています");
+			System.out.println(super.getName() + "が一回目の素手で攻撃しています");
+			this.setHp(this.getHp() - 1500);
+			System.out.println(super.getName() + "が二回目の素手で攻撃しています");
 			this.setHp(this.getHp() - 1500);
 			//生存判定
 			boolean deadFlag = super.checkDead(monster);
 			return deadFlag;
 		}
-	}
-
-	public void run() {
-		System.out.println("魔法使いは走った");
-	}
-
-	public Wizard(String name) {
-		super.setName(name);
-	}
-
-	@Override
-	void attack() {
-		// TODO 自動生成されたメソッド・スタブ
 
 	}
-
 }
-
