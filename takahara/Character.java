@@ -37,6 +37,11 @@ public abstract class Character extends Life {
 	public boolean checkDead(Monster monster) {
 		if( this.getHp() <= 0 ) {
 			super.dead(monster.getName());
+			setExp(monster.getExp() + getExp());
+			if( getExp() >= 100 ){
+				levelUp();
+				setExp(0);
+			}
 			return true;
 		} else {
 			System.out.println(this.getName() + "ののこりHPは" + this.getHp() + "です。");
