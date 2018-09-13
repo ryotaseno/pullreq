@@ -16,6 +16,7 @@ public class Zombie extends Monster implements Human {
 	public void attack(Monster monster) {
 		System.out.println("ゾンビが噛みついています。");
 		monster.setHp(monster.getHp() - 800);
+
 		if(monster.getHp() <= 0) {
 			super.dead(monster.getName());
 		}else {

@@ -25,12 +25,14 @@ public class Hero extends Character implements Human{
 	public void run(){
 		System.out.println("勇者は走っています");
 	}
-	//コンストラクタ
-	public Hero(String name) {
+	//入力がある場合のコンストラクタ
+	public Hero(String name, int lv, int hp) {
+		super.setHp(hp);
+		super.setLv(lv);
 		super.setName(name);
 	}
 
-	//コンストラクタ
+	//入力がない場合のコンストラクタ
 	public Hero() {
 		super.setName("ななしさん");
 		super.setHp(100);

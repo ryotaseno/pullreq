@@ -16,4 +16,6 @@ public abstract class Monster extends Life {
 		this.name = name;
 	}
 
+
+
 }
