@@ -5,6 +5,7 @@ public abstract class Character extends Life {
 	private int lv;
 	private String name;
 	private Weapon wp;
+	private int power;
 
 	abstract void attack();
 
