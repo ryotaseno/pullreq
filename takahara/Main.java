@@ -1,3 +1,4 @@
+
 package takahara;
 
 public class Main {
@@ -9,8 +10,8 @@ public class Main {
 		Yatagarasu yatagarasuB = new Yatagarasu("八咫烏B");
 		Zombie zombieA = new Zombie("ゾンビA");
 
-		Hero huji = new Hero("藤井先生",100,1);
-		Wizard ito = new Wizard("伊藤先生",100,1);
+		Hero huji = new Hero("藤井先生",1,100);
+		Wizard ito = new Wizard("伊藤先生",1,100);
 
 		huji.attack(yatagarasuB);
 		//hujiが剣を装備する処理を書く
@@ -26,9 +27,10 @@ public class Main {
 		}
 		//レベルアップの関数を呼び出す
 
-		SuperHero hujiwara = new SuperHero("藤原",100,1);
+		SuperHero hujiwara = new SuperHero("藤原",1,100);
 
 		hujiwara.attack(huji);
 
 
 	}
+

@@ -16,6 +16,8 @@ public class Yatagarasu extends Monster implements Bird {
 	public void attack(Monster monster) {
 		System.out.println("八咫烏が噛みついています。");
 		monster.setHp(monster.getHp() - 1500);
+
+		//生存判定
 		if(monster.getHp() <= 0) {
 			super.dead(monster.getName());
 		}else {
@@ -24,7 +26,23 @@ public class Yatagarasu extends Monster implements Bird {
 	}
 
 	@Override
+	//八咫烏ががキャラクターに攻撃する
 	void attack(Character character) {
+		// TODO 自動生成されたメソッド・スタブ
+
+		System.out.println("八咫烏が攻撃しています");
+		character.setHp(character.getHp() - 1500);
+
+		//生存判定
+		if( character.getHp() <= 0 ) {
+			super.dead(this.getName());
+		} else {
+			System.out.println(character.getName() + "ののこりHPは" + character.getHp() + "です。");
+		}
+	}
+
+	@Override
+	public void fly() {
 		// TODO 自動生成されたメソッド・スタブ
 
 	}

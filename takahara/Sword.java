@@ -12,15 +12,10 @@ public class Sword extends Weapon{
 	}
 
 	public int attack(int hp) {
-		hp -= super.getPower() ;
-		System.out.println("slash");
+		hp -= super.getPower();
+		System.out.println(this.getName() + "でslash");
 		return hp;
 	}
 
-	@Override
-	void attack() {
-		// TODO 自動生成されたメソッド・スタブ
-
-	}
 
 }
