@@ -1,4 +1,5 @@
 
+
 package takahara;
 
 public class Main {

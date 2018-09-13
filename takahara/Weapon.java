@@ -1,3 +1,4 @@
+
 package takahara;
 
 public abstract class Weapon {
@@ -31,4 +32,3 @@ public abstract class Weapon {
 		this.power = power;
 	}
 
-}

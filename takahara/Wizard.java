@@ -1,8 +1,9 @@
 
+
 package takahara;
 
 public class Wizard extends Character implements Human{
-  
+
   	public Wizard(String name,int hp,int lv) {
 		super.setName(name);
 		super.setHp(hp);

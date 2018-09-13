@@ -1,3 +1,4 @@
+
 package takahara;
 
 public abstract class Character extends Life {
@@ -5,6 +6,8 @@ public abstract class Character extends Life {
 	private int lv;
 	private String name;
 	private Weapon wp;
+	private int exp;
+
 
 	abstract void attack();
 
@@ -33,6 +36,14 @@ public abstract class Character extends Life {
 		System.out.println("武器を装備した");
 	}
 
+	public int getExp() {
+		return exp;
+	}
+
+	public void setExp(int exp) {
+		this.exp = exp;
+	}
+
 	//生存判定
 	public boolean checkDead(Monster monster) {
 		if( this.getHp() <= 0 ) {
@@ -48,5 +59,10 @@ public abstract class Character extends Life {
 			return false;
 		}
 	}
+
+	public void levelUp() {
+		this.setLv(this.getLv() + 1);
+		this.setHp(100);
+	};
 
 }

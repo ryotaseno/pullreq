@@ -1,3 +1,4 @@
+
 package takahara;
 
 public class Hero extends Character implements Human{
