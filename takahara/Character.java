@@ -4,6 +4,7 @@ public abstract class Character extends Life {
 
 	private int lv;
 	private String name;
+
 	private Weapon wp;
 	private int power;
 
@@ -29,8 +30,6 @@ public abstract class Character extends Life {
 		return wp;
 	}
 
-	public void setWeapon(Weapon wp) {
-		this.wp = wp;
-	}
+
 
 }
