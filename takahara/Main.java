@@ -41,9 +41,9 @@ public class Main {
 			}
 		}
 
-		//zombieA.attack(yatagarasuB);
-		//zombieA.attack(yatagarasuB);
-		//zombieA.attack(yatagarasuB);
+		zombieA.attack(yatagarasuB);
+		zombieA.attack(yatagarasuB);
+		zombieA.attack(huji);
 	}
 
 }

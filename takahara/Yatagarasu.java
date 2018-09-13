@@ -14,18 +14,37 @@ public class Yatagarasu extends Monster implements Bird {
 	}
 
 	public void attack(Monster monster) {
-		System.out.println("八咫烏が噛みついています。");
+		System.out.println(super.getName() + "の攻撃");
 		monster.setHp(monster.getHp() - 1500);
-		if(monster.getHp() <= 0) {
-			super.dead(monster.getName());
-		}else {
-			System.out.println(this.name + "の残りHPは" + monster.getHp() + "です。");
+		if (monster instanceof Zombie){
+			//攻撃対象がZombie
+			if(monster.getHp() <= -100) {
+				monster.dead(monster.getName());
+			}else {
+				System.out.println(monster.getName() + "の残りHPは" + monster.getHp() + "です。");
+			}
+		}
+		else {
+			if(monster.getHp() <= 0) {
+				monster.dead(monster.getName());
+			}else {
+				System.out.println(monster.getName() + "の残りHPは" + monster.getHp() + "です。");
+			}
 		}
 	}
 
 	@Override
 	void attack(Character character) {
 		// TODO 自動生成されたメソッド・スタブ
+		System.out.println(super.getName() + "の攻撃");
+		character.setHp(character.getHp() - 800);
+
+		if(character.getHp() <= 0) {
+			super.dead(character.getName());
+
+		}else {
+			System.out.println(character.getName() + "の残りHPは" + character.getHp() + "です。");
+		}
 
 	}
 

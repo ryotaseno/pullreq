@@ -20,6 +20,16 @@ public class Hero extends Character implements Human{
 
 	public Hero(String name) {
 		super.setName(name);
+		super.setLv(1);
+		super.setHp(100);
+
+	}
+
+	public Hero(){
+		super.setName("ななし");
+		super.setLv(1);
+		super.setHp(100);
+
 	}
 
 	@Override
@@ -27,5 +37,6 @@ public class Hero extends Character implements Human{
 		// TODO 自動生成されたメソッド・スタブ
 
 	}
+
 
 }

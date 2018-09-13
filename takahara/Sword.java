@@ -17,10 +17,5 @@ public class Sword extends Weapon{
 		return hp;
 	}
 
-	@Override
-	void attack() {
-		// TODO 自動生成されたメソッド・スタブ
-
-	}
 
 }
