@@ -2,5 +2,7 @@
 package takahara;
 
 public interface Bird {
-	void run();
+	abstract void run();
+	
+	abstract void fly();
 }
