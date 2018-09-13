@@ -7,6 +7,7 @@ public class Yatagarasu extends Monster implements Bird {
 	public Yatagarasu(String name) {
 		super.setName(name);
 		super.setHp(2000);
+		super.setExp(50);
 	}
 
 	public void run(){
