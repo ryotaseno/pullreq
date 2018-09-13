@@ -7,7 +7,7 @@ public abstract class Monster extends Life {
 
 
 	private String name;
-	private String exp;
+	private int exp;
 
 	public String getName() {
 		return name;
