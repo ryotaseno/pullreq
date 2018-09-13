@@ -17,11 +17,11 @@ public abstract class Monster extends Life {
 		this.name = name;
 	}
 
-	public String getExp() {
+	public int getExp() {
 		return exp;
 	}
 
-	public void setExp(String exp) {
+	public void setExp(int exp) {
 		this.exp = exp;
 	}
 
