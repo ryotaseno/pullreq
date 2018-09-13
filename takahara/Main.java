@@ -1,3 +1,4 @@
+
 package takahara;
 
 public class Main {
@@ -9,25 +10,27 @@ public class Main {
 		Yatagarasu yatagarasuB = new Yatagarasu("八咫烏B");
 		Zombie zombieA = new Zombie("ゾンビA");
 
-		Hero huji = new Hero("藤井先生", 1, 100);
-		Wizard ito = new Wizard("伊藤先生");
+		Hero huji = new Hero("藤井先生",1,100);
+		Wizard ito = new Wizard("伊藤先生",1,100);
 
 		huji.attack(yatagarasuB);
 		//hujiが剣を装備する処理を書く
 		Sword sword = new Sword();
 		huji.setWeapon(sword);
 
-		boolean deadFlag = false;
-		while(deadFlag == false) {
-			deadFlag = huji.attack(yatagarasuA);
+		//藤井先生が八咫烏を殴る
+		huji.attack(yatagarasuB);
 
-			//ゾンビが伊藤先生を殴る
-			//zombieA.attack(ito);
-			if(ito.getHp() <= 0) {
-				System.out.println("伊藤先生が死にました。");
-				break;
-			}
+		//伊藤先生がゾンビが死ぬまで殴る
+		while(true) {
+		if(ito.attack(zombieA))break;
 		}
+		//レベルアップの関数を呼び出す
+
+		SuperHero hujiwara = new SuperHero("藤原",1,100);
+
+		hujiwara.attack(huji);
+
+
 	}
 
-}
