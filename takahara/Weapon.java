@@ -31,4 +31,5 @@ public abstract class Weapon {
 	public void setPower(int power) {
 		this.power = power;
 	}
+}
 

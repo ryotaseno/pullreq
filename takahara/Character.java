@@ -49,7 +49,7 @@ public abstract class Character extends Life {
 		this.exp = exp;
 	}
 
-	//生存判定
+	//モンスターの生存判定
 	public boolean checkDead(Monster monster) {
 		if( this.getHp() <= 0 ) {
 			super.dead(monster.getName());
@@ -65,9 +65,22 @@ public abstract class Character extends Life {
 		}
 	}
 
+	//モンスターの生存判定
+	public boolean checkDead(Character character) {
+		if( this.getHp() <= 0 ) {
+			super.dead(character.getName());
+			return true;
+		} else {
+			System.out.println(this.getName() + "ののこりHPは" + this.getHp() + "です。");
+			return false;
+		}
+	}
+
+
 	public void levelUp() {
 		this.setLv(this.getLv() + 1);
 		this.setHp(100);
+		System.out.println("レベルが上がりました。");
 	};
 
 }

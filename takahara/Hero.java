@@ -23,6 +23,26 @@ public class Hero extends Character implements Human{
 
 	}
 
+	public boolean attack(Character character) {
+
+		//武器を持っているかの判定
+		if( super.getWp() != null ){
+			//持っている武器のattack()を呼び出す
+			character.setHp(super.getWp().attack(character.getHp()));
+			//生存判定
+			boolean deadFlag = super.checkDead(character);
+			return deadFlag;
+		} else {
+			//素手で殴る場合の処理
+			System.out.println(super.getName() + "が素手で攻撃しています");
+			this.setHp(this.getHp() - 1500);
+			//生存判定
+			boolean deadFlag = super.checkDead(character);
+			return deadFlag;
+		}
+
+	}
+
 	public void run(){
 		System.out.println("勇者は走っています");
 	}
@@ -42,6 +62,12 @@ public class Hero extends Character implements Human{
 
 	@Override
 	void attack() {
+		// TODO 自動生成されたメソッド・スタブ
+
+	}
+
+	@Override
+	public void talk() {
 		// TODO 自動生成されたメソッド・スタブ
 
 	}

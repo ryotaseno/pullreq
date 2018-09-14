@@ -2,8 +2,10 @@ package takahara;
 
 public class SuperHero extends Hero{
 
-	public SuperHero(String name) {
+	public SuperHero(String name, int lv, int hp) {
 		super.setName(name);
+		super.setHp(hp);
+		super.setLv(lv);
 	}
 
 	public boolean attack(Monster monster) {

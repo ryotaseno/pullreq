@@ -8,7 +8,7 @@ public class Zombie extends Monster implements Human {
 	public Zombie(String name) {
 		super.setName(name);
 		super.setHp(9999);
-		super.setExp(60);
+		super.setExp(100);
 	}
 
 	public void run(){
@@ -48,6 +48,12 @@ public class Zombie extends Monster implements Human {
 				System.out.println(monster.getName() + "の残りHPは" + monster.getHp() + "です。");
 			}
 		}
+
+	}
+
+	@Override
+	public void talk() {
+		// TODO 自動生成されたメソッド・スタブ
 
 	}
 

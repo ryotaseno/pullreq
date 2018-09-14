@@ -43,5 +43,11 @@ public class Wizard extends Character implements Human{
 
 	}
 
+	@Override
+	public void talk() {
+		// TODO 自動生成されたメソッド・スタブ
+
+	}
+
 }
 

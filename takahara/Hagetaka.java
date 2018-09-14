@@ -4,24 +4,21 @@ public class Hagetaka extends Monster implements Bird{
 
 	String name;
 	int hp;
-	int lv;
-	int power;
-	
+
 	public Hagetaka() {
 		super.setName("ななしさん");
 		super.setHp(100);
-		super.setLv(1);
-		super.setPower(10);
+
 	}
 
 	public void run(){
 		System.out.println("禿鷹が走っています。");
 	}
-	
-	
+
+
 	public void attack(Monster monster) {
 		System.out.println("禿鷹が噛みついています。");
-		monster.setHp(monster.getHp() - power);
+		monster.setHp(monster.getHp() - 2000);
 		if(monster.getHp() <= 0) {
 			super.dead(monster.getName());
 		}else {
@@ -29,8 +26,19 @@ public class Hagetaka extends Monster implements Bird{
 		}
 	}
 
+
+	void attack(Character character){
+		System.out.println("禿鷹が噛みついています。");
+		character.setHp(character.getHp() - 2000);
+		if(character.getHp() <= 0) {
+			super.dead(character.getName());
+		}else {
+			System.out.println(this.name + "の残りHPは" + character.getHp() + "です。");
+		}
+	}
+
 	@Override
-	void attack(Character character) {
+	public void fly() {
 		// TODO 自動生成されたメソッド・スタブ
 
 	}

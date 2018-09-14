@@ -13,8 +13,6 @@ public class Main {
 
 		Hero huji = new Hero("藤井先生",1,100);
 		Wizard ito = new Wizard("伊藤先生",1,100);
-
-		huji.attack(yatagarasuB);
 		//hujiが剣を装備する処理を書く
 		Sword sword = new Sword();
 		huji.setWeapon(sword);
@@ -32,6 +30,8 @@ public class Main {
 
 		hujiwara.attack(huji);
 
+
+	}
 
 	}
 
