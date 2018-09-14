@@ -1,3 +1,4 @@
+
 package takahara;
 
 public abstract class Weapon {
@@ -10,7 +11,7 @@ public abstract class Weapon {
 		System.out.println("武器を投げつける");
 	}
 
-	abstract void attack();
+	abstract int attack(int hp);
 
 	//name getter/setter
 	public String getName() {
@@ -31,4 +32,3 @@ public abstract class Weapon {
 		this.power = power;
 	}
 
-}

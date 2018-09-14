@@ -7,6 +7,8 @@ public abstract class Monster extends Life {
 
 
 	private String name;
+	private int exp;
+
 
 	public String getName() {
 		return name;
@@ -15,5 +17,15 @@ public abstract class Monster extends Life {
 	public void setName(String name) {
 		this.name = name;
 	}
+
+	public int getExp() {
+		return exp;
+	}
+
+	public void setExp(int exp) {
+		this.exp = exp;
+	}
+
+
 
 }
